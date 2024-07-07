@@ -1,0 +1,664 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+    html {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    @media (max-width: 100.25em) {
+      html {
+        font-size: 78%;
+      } 
+    }
+ @media (max-width: 62.25em) {
+      html {
+        font-size: 63%;
+      }
+   .headi{
+         text-align:center;
+   }
+   p{
+        text-align:center;
+   }
+    }
+@media (max-width: 46.25em) {
+      html {
+        font-size: 55%;
+      }
+  .headi{
+    text-align:center;
+   }
+    }
+    /* 460px / 16px = 28.75em */
+    @media (max-width: 28.75em) {
+      html {
+        font-size: 45%;
+      }   
+    }
+@font-face {
+    src: url(fonts/BillionDreams_PERSONAL.ttf);
+    font-family: 'FLORLRG';
+    font-weight: normal;
+    font-style: normal;
+}
+    ul {
+      list-style: none;
+    }
+    .ak {
+      text-decoration: none;
+      color: black;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: #972239;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+      color: white;
+      z-index: 10;
+    }
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      font-family: kavoon;
+      margin-right: 0rem;
+    }
+
+    @media (max-width: 28.75em) {
+      .nav {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        height: 3.3%;
+        background:#972239;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        color: white;
+        z-index: 10;
+      }
+
+      .nav-list {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.5rem;
+        font-family: kavoon;
+      }
+ .nav-list .ak {
+      font-size: 0.5rem;
+      }
+      .headi {
+        font-family: 'FLORLRG';
+        font-size: 3rem;
+        text-align:center;
+        
+        position:relative;
+        bottom:170px;
+      }
+    
+      .ha{ position:relative;
+        bottom:170px;
+      }
+    }
+    .nav-list .ak {
+      display: block;
+      font-family: oxygen;
+      color:white;
+      font-size: 1rem;
+      padding: 0.9rem;
+    }
+/*-- Pale pink, coral, gray, lilac and navy: */
+    .nav-list .ak:hover {
+      background-color:#eaab66;
+    }
+    .headi {
+      padding: 0 0 0 0;
+      font-size: 10rem;
+      font-family: 'FLORLRG';
+      color: #73301c;
+       position:relative;
+        bottom:160px;
+        animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {color:#eaab66;
+  }
+    }
+    .head1 {
+      padding: 1rem 0 0 0;
+      font-size: 3rem;
+      text-align:center;
+      font-family: oxygen;
+      color: #eaab66;
+    }
+   
+
+    .ha {
+      font-family: kavoon;
+      text-align:center;
+      font-size:2rem;
+      color: #000000;
+        position:relative;
+        bottom:160px;
+    }
+    .clo {
+      font-size: 2rem;
+    }
+    .cho{
+      position:relative;
+      top:2px;
+      font-size:3rem;
+      text-align:center;
+      color:#db6885;
+    }
+.def{   
+     position:relative;
+     top:10px;
+     padding:2rem 2rem 2rem 12rem;
+      font-size:1rem;
+font-family: oxygen;
+      color:white;
+}
+    @media(max-width:28.75em){
+        .def{
+          position:relative;
+          padding:2rem;
+      }
+    }
+ 
+    @media (max-width: 28.75em) {
+      .img {
+        display: none;
+      }
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-image:url("Images/aneta-voborilova-4-Cuz3ls1-BCI-unsplash.jpg");
+      background-size:cover;
+    }
+    @media(max-width:28.75em){
+    .hobbies {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 40vh;
+      background-color: #73301c;
+    }
+    }
+    @media(min-width:28.75em){
+    .hobbies {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 50vh;
+      background-color: #73301c;
+    }
+    }
+    .specials{ 
+   justify-content: center;
+      width: 100%;
+      height: 230vh;
+      background-color: #401614;
+    }  
+  @media (max-width: 28.75em){ 
+.row > .column {
+  padding:8px 4px;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.row > .col {
+  padding:8px 4px 2px 4px;
+}
+.col{
+  width:100%;
+  position:relative;
+  animation:mycol 5s 1;
+}
+@keyframes mycol{
+  from {left: 100%;}
+  to {left: 0px;}
+}
+.two{
+  height:250px;
+}
+.sm{
+  height:500px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 15%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+}
+    #spl{
+      padding: 1rem 0 0 0;
+      font-size: 3rem;
+      text-align:center;
+      align-items: center;
+      font-family: oxygen;
+      color: #eaab66;
+    }
+   @media (min-width:28.75em){
+    .row{
+      position: absolute;
+      left:10rem;
+    }
+    .row > .column {
+      padding: 8px 8px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.col{
+  display:none;
+}
+#one{
+  height:420px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.specials{
+  height:170vh;
+}
+   }
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  justify-content: center;
+  text-align: center;
+  background-color:#000;
+  padding: 3px 16px;
+  color: white;
+  font-size: 3rem;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (min-width:28.75em){
+  .other {
+      width: 100%;
+      height: 440vh;
+      background-color: #db6885;
+    }
+    .choco{
+  width:100px;
+  height:500px;
+}
+}
+@media (max-width:28.75em){
+.other {
+      width: 100%;
+      height: 160vh;
+      background-color: #db6885;
+    }
+}
+    .lu{
+      padding: 1rem 0 0 0;
+      font-size: 3rem;
+      text-align:center;
+      align-items: center;
+      font-family: oxygen;
+      color:#401614;
+      
+    }
+    .container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px 10px;
+}
+.kids {
+      width: 100%;
+      height: 1330vh;
+      background-color:coral;
+    }
+    .sp{
+      padding: 1rem 0 0 0;
+      font-size: 3rem;
+      text-align:center;
+      align-items: center;
+      font-family: 'FLORLRG';
+      color:#972239;
+    }
+@media(min-width:28.75em){
+.row1{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  position:absolute;
+  left:11rem;
+}
+.kids {
+      width: 100%;
+      height: 360vh;
+      background-color:coral;
+    }
+}
+.row1{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.column1 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 62.75em) {
+  .column1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 28.75em) {
+  .column1{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.contact1{
+  width: 100%;
+      height: 100vh;
+      background-color:#73301c;
+
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#972239;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color:black;
+  background-color:#999;
+}
+
+/* Style the container/contact section */
+.container1{
+  border-radius: 5px;
+  background-color: #73301c;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column2 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.container1 h2{
+  color:white;
+  font-size:3rem;
+}
+.ct{
+  color:white;
+  font-size:1rem;
+}
+@media(max-width:28.75em){
+  .im{
+  width:100%;
+
+}
+}
+@media(min-width:28.75em){
+.im{
+  height:500px;
+  width:35%;
+position:absolute;
+left:11rem;
+}
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 60vh;
+  padding: 0 2rem;
+  background-color:#db6885;
+}
+
+.contact-section-header > h2 {
+  font-family:oxygen;
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-family:oxygen;
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+.btn {
+  text-decoration: none;
+  color:black;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
